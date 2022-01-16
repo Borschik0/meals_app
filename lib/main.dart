@@ -1,23 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'categories_screen.dart';
+
 void main() => runApp(const MaterialApp(
-      home: HomePage(),
+      home: CategoriesScreen(),
     ));
 
-class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
 
-  @override
-  _HomePageState createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text("DeliMeals"),),
-      body: const Center(child: Text('Navigation Time!'),),
-
-    );
-  }
-}
