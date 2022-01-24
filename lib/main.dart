@@ -4,7 +4,7 @@ import 'categories_screen.dart';
 import 'category_meals_screen.dart';
 
 void main() => runApp(MaterialApp(
-      home: const CategoriesScreen(),
+      // home: const CategoriesScreen(),
       title: 'DeliMeal',
       theme: ThemeData(
           primarySwatch: Colors.pink,
@@ -15,9 +15,12 @@ void main() => runApp(MaterialApp(
               bodyText1: const TextStyle(color: Color.fromRGBO(20, 51, 51, 1)),
               bodyText2: const TextStyle(color: Color.fromRGBO(20, 51, 51, 1)),
               headline6: const TextStyle(
-                  fontSize: 24, fontFamily: 'RobotoCondensed',
-              fontWeight: FontWeight.w700))),
-  routes: {
+                  fontSize: 24,
+                  fontFamily: 'RobotoCondensed',
+                  fontWeight: FontWeight.w700))),
+      initialRoute: '/',
+      routes: {
+        '/': (ctx) => const CategoriesScreen(),
         CategoryMealsScreen.routeName: (ctx) => const CategoryMealsScreen()
-  },
+      },
     ));
