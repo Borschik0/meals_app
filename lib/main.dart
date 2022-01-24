@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'categories_screen.dart';
+import 'category_meals_screen.dart';
 
 void main() => runApp(MaterialApp(
       home: const CategoriesScreen(),
@@ -16,4 +17,7 @@ void main() => runApp(MaterialApp(
               headline6: const TextStyle(
                   fontSize: 24, fontFamily: 'RobotoCondensed',
               fontWeight: FontWeight.w700))),
+  routes: {
+        CategoryMealsScreen.routeName: (ctx) => const CategoryMealsScreen()
+  },
     ));
