@@ -71,6 +71,10 @@ class MealDetailScreen extends StatelessWidget {
               itemCount: selectedMeal.steps.length,
             ))
           ]),
-        ));
+        ),
+    floatingActionButton: FloatingActionButton(
+      child: const Icon(Icons.delete),
+      onPressed: () => Navigator.of(context).pop(selectedMeal),
+    ),);
   }
 }
